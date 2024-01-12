@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Title</title>
+</head>
+<body>
+<div style="position: absolute; left: 40px;" class="mt-5">
+    <form id="myForm">
+        <label for="Name">П.І.Б:</label>
+        <input type="text" id="Name" name="fullName" required>
+
+        <br>
+
+        <label>Рік навчання:</label>
+        <input type="radio" id="year1" name="educationYear" value="1">
+        <label for="year1">1</label>
+
+        <input type="radio" id="year2" name="educationYear" value="2">
+        <label for="year2">2</label>
+
+        <input type="radio" id="year3" name="educationYear" value="3">
+        <label for="year3">3</label>
+
+        <br>
+
+        <label for="good">Ви добре навчаєтесь?</label>
+        <input type="checkbox" id="good" name="goodStudent">
+
+        <br>
+
+        <label for="phone">Номер телефону:</label>
+        <input type="number" id="phone" name="phone" pattern="[0-9]+">
+
+        <br>
+
+        <input type="submit" value="Відправити">
+    </form>
+
+
+    <div id="outputDiv">
+        <ol>
+
+        </ol>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
